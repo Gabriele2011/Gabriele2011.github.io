@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MINISTERO DELLA DIFESA</title>
+    <style>
+              * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+      
+      h1{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+      h3{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+    </style>
+  </head>
+  <body style="background-color: black;">
+    <header>
+      <script>
+        function mostra() {
+          var uname=document.getElementById("nome").value;
+          if (uname==""){
+          alert("inserire un nome!");
+          } else {
+          if (uname.toLowerCase().includes("pannisco")) {
+          alert(uname + " non presente nella lista dei partecipanti.")
+          } else {
+            if (uname.toLowerCase().includes("gabriele")) {
+          alert(uname + " non presente nella lista dei partecipanti.")
+          } else
+          alert(uname + " presente nella lista dei partecipanti.");
+          }
+        }
+        }
+      </script>
+    </header>
+    <main>
+      <center>
+        <div class="imgbox">
+        <img src="logo.png"class="center-fit">
+        </div>
+        <br>
+        <img src="warning.gif">
+        <h1>LE PERSONE NATE DAL 2012 IN POI</h1>
+        <h1>VERRANNO RICHIAMATE AL MILITARE DOPO AVER COMPIUTO 18 ANNI</h1>
+        <h1>ALLA CASERMA MILITARE DI ROMA PER L'ADDESTRAMENTO PER UN PERIODO DI 3 ANNI</h1>
+        <h3>Verifica se sei in lista:</h3>
+        <input type="text" id="nome" placeholder="Nome e cognome">
+        <button onclick="mostra()">Verifica</button>
+        <h3>Nota, i telefoni verranno confiscati all entrata. </h3>
+      </center>
+    </main>
+    <footer></footer>
+  </body>
+</html>
